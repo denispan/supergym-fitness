@@ -1,0 +1,181 @@
+.gym {
+  grid-column: 1 / 3;
+}
+
+.gym__container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  column-gap: 28px;
+  padding-top: 120px;
+  padding-bottom: 215px;
+
+  @include vp-1199 {
+    display: flex;
+    column-gap: 0;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-top: 99px;
+    padding-bottom: 183px;
+  }
+
+  @include vp-767 {
+    padding: 69px 0 70px 0;
+  }
+}
+
+.gym__description-wrapper {
+  margin: 47px 55px auto 60px;
+
+  @include vp-1199 {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  @include vp-767 {
+    text-align: start;
+    margin: 0 15px;
+  }
+}
+
+.gym__description-wrapper h2 {
+  margin-bottom: 8px;
+
+  @include vp-1199 {
+    margin-bottom: 9px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 6px;
+  }
+}
+
+.gym__description-wrapper p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  color: $color-sapphire;
+  margin: 0;
+
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+
+  &:first-of-type {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 400;
+    color: $color-sapphire;
+    margin-bottom: 39px;
+  }
+
+  @include vp-1199 {
+    margin: auto 80px auto;
+
+    &:first-of-type {
+      margin-bottom: 34px;
+    }
+
+    &:last-of-type {
+      display: none;
+    }
+  }
+
+  @include vp-767 {
+    margin: 0 27px 0 0;
+
+    &:first-of-type {
+      margin-bottom: 24px;
+      margin-right: 10px;
+    }
+  }
+}
+
+.gym__image-container {
+  position: relative;
+  align-self: start;
+  overflow: hidden;
+  max-width: 660px;
+  min-height: 401px;
+  margin-bottom: 20px;
+
+  @include vp-1199 {
+    width: 100%;
+    min-height: auto;
+    max-width: 678px;
+    height: 345px;
+    margin: 35px auto auto;
+  }
+
+  @include vp-767 {
+    max-width: 100%;
+    min-height: 313px;
+    width: 100%;
+    height: 100%;
+    margin-top: 24px;
+    margin-bottom: 40px;
+  }
+}
+
+.gym__image-container img {
+  position: absolute;
+  max-width: none;
+  width: 660px;
+  height: 441px;
+  bottom: -3px;
+  left: 0;
+
+  @include vp-1199 {
+    width: 774px;
+    height: 403px;
+    bottom: -39px;
+    left: -94px;
+  }
+
+  @include vp-767 {
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    min-width: 0;
+    bottom: auto;
+    left: auto;
+  }
+
+  @include vp-457 {
+    position: absolute;
+    max-width: 774px;
+    height: 313px;
+    width: 465px;
+    left: auto;
+    bottom: 0;
+    right: -14px;
+  }
+}
+
+.gym__video-wrapper {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-39.3%);
+  top: 408px;
+
+  @include vp-1199 {
+    top: auto;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @include vp-767 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    bottom: auto;
+  }
+
+  @include vp-374 {
+    width: 100%;
+    height: 167px;
+  }
+}

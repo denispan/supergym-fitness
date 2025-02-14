@@ -1,0 +1,84 @@
+.tab-titles-list {
+  position: relative;
+  display: inline-flex;
+  vertical-align: baseline;
+  flex-wrap: wrap;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: rgba($color-grey, 0.2);
+  }
+
+  & li:not(:last-child) {
+    margin-right: 47px;
+  }
+
+  @include vp-1199 {
+    & li:not(:last-child) {
+      margin-right: 55px;
+    }
+  }
+
+  @include vp-767 {
+    & li:not(:last-child) {
+      margin-right: 38px;
+    }
+
+    & li:last-child h3 {
+      padding-right: 2px;
+    }
+  }
+}
+
+.tab-titles-list__btn {
+  position: relative;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  color: $color-sapphire;
+  margin: 0;
+  border: none;
+  padding: 13px 0;
+  background-color: $color-transparent;
+  cursor: pointer;
+  user-select: none;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &--active::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: $color-crimson;
+  }
+
+  @include vp-1199 {
+    font-size: 18px;
+    line-height: 27px;
+    padding: 14px 0;
+  }
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 14px 5px 14px 1px;
+  }
+}
+
+.tab-titles-list button:last-of-type {
+  padding-right: 3px;
+
+  @include vp-767 {
+    padding-right: 4px;
+  }
+}

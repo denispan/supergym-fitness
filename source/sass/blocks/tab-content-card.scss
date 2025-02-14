@@ -1,0 +1,94 @@
+.tab-content-card {
+  position: relative;
+  min-height: 448px;
+  text-align: center;
+  padding: 56px 20px;
+  background-color: $color-default-white;
+  border: 7px solid transparent;
+
+  &:hover {
+    border-image: $crimson-to-smalt;
+    border-image-slice: 1;
+  }
+
+  &:hover a {
+    color: $color-default-white;
+    background: $torch-red-to-cobalt;
+    box-shadow: none;
+  }
+
+  @include vp-767 {
+    min-height: 384px;
+    padding: 44px 20px 20px;
+  }
+}
+
+.tab-content-card p:first-of-type {
+  margin: 0 0 65px;
+  color: $color-chambray;
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 52px;
+  }
+}
+
+.tab-content-card__price {
+  margin: 0 0 30px;
+  font-size: 60px;
+  line-height: 90px;
+  font-weight: 700;
+  color: $color-egyptian-blue;
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    content: attr(data-price);
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 100px;
+    line-height: 150px;
+    font-weight: 700;
+    color: $color-whisper;
+    z-index: -1;
+  }
+
+  @include vp-767 {
+    font-size: 48px;
+    line-height: 72px;
+    margin: 0 0 26px 4px;
+
+    &::before {
+      font-size: 80px;
+      line-height: 120px;
+      bottom: -6px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+.tab-content-card__price svg {
+  position: relative;
+  z-index: 1;
+
+  @include vp-767 {
+    width: 24px;
+    height: 33px;
+  }
+}
+
+.tab-content-card h3 {
+  font-size: 26px;
+  line-height: 28px;
+  margin: 0 0 11px;
+  color: $color-sapphire;
+
+  @include vp-767 {
+    font-size: 22px;
+    line-height: 24px;
+  }
+}

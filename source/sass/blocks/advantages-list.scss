@@ -1,0 +1,261 @@
+.advantages-list {
+  display: inline-grid;
+  grid-template-columns: 4fr 3fr 4fr;
+  column-gap: 50px;
+  row-gap: 147px;
+
+  @include vp-1199 {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 42px;
+  }
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+.advantages-list__item {
+  display: flex;
+  position: relative;
+  justify-content: start;
+  text-align: start;
+
+  &:nth-child(3n) {
+    padding: 20px 10px;
+  }
+
+  &:nth-child(4n)::before,
+  &:nth-child(5n)::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: -71px;
+    left: 0;
+    background-color: rgba($color-crimson, 0.2);
+  }
+
+  &:nth-child(5n)::before {
+    width: 99%;
+    left: 3px;
+  }
+
+  & p {
+    width: fit-content;
+    font-size: 71px;
+    line-height: 71px;
+    font-weight: 700;
+    background: $crimson-to-cobalt-light;
+    background-clip: text;
+    color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 0 0 0 27px;
+  }
+
+  & small {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    color: $color-persian-blue;
+  }
+
+  &:nth-child(2n) p {
+    margin-left: 3px;
+  }
+
+  &:nth-child(4n) p {
+    margin-left: 20px;
+  }
+
+  &:nth-child(5n) p {
+    margin-left: 3px;
+    margin-right: 2px;
+  }
+
+  @include vp-1199 {
+    &:nth-child(3n) {
+      margin: 0 118px;
+      padding: 34px 95px 20px;
+    }
+
+    &:nth-child(4n)::before,
+    &:nth-child(5n)::before {
+      content: none;
+    }
+
+    & p {
+      font-size: 58px;
+      line-height: 60px;
+      margin: 0;
+    }
+
+    & small {
+      line-height: 14px;
+    }
+
+    &:nth-child(2n) p,
+    &:nth-child(5n) p {
+      margin-left: 0;
+    }
+  }
+
+  @include vp-767 {
+    flex-direction: column;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: 31px;
+    }
+
+    &:nth-child(2n) {
+      margin-bottom: 42px;
+    }
+
+    &:nth-child(4n) {
+      margin-bottom: 31px;
+    }
+
+    &:nth-child(3n) {
+      margin: 0 -15px 40px;
+      padding: 38px 39px 10px;
+    }
+
+    & p {
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    &:nth-child(4n) p {
+      margin-bottom: 8px;
+    }
+
+    &:nth-child(5n) p {
+      margin-top: 2px;
+      margin-left: 2px;
+    }
+  }
+}
+
+.advantages-list__item dl {
+  margin: 5px 0 0 30px;
+
+  @include vp-1199 {
+    margin-top: 1px;
+  }
+
+  @include vp-767 {
+    text-align: center;
+    margin: 0;
+    padding: 0 20px;
+  }
+}
+
+.advantages-list__item dt {
+  font-size: 22px;
+  line-height: 33px;
+  font-weight: 700;
+  color: $color-sapphire;
+  margin: 0 0 5px 0;
+
+  @include vp-1199 {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 2px;
+  }
+}
+
+.advantages-list__item dd {
+  font-size: 16px;
+  line-height: 22.4px;
+  font-weight: 300;
+  color: $color-sapphire;
+  margin: 0;
+}
+
+.advantages-list__item--special {
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  background-color: $color-resolution-blue;
+  margin: 11px 7px 5px 9px;
+  padding: 20px 10px;
+
+  & > p {
+    align-items: center;
+    font-size: 74px;
+    line-height: 74px;
+    font-weight: 700;
+    color: $color-default-white;
+    padding-right: 6px;
+    padding-bottom: 3px;
+    margin: 0 auto 25px;
+  }
+
+  & small {
+    font-size: 26px;
+    line-height: 39px;
+    font-weight: 700;
+    color: $color-default-white;
+    padding-left: 6px;
+    padding-top: 3px;
+  }
+
+  & dl {
+    margin: 0 20px;
+    padding-bottom: 3px;
+  }
+
+  & dd {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: $color-default-white;
+    margin: 0 auto;
+  }
+
+  @include vp-1199 {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    min-height: 239px;
+    align-items: center;
+    justify-content: start;
+
+    & > p {
+      font-size: 74px;
+      line-height: 74px;
+      margin-bottom: 9px;
+    }
+
+    & small {
+      font-size: 22px;
+      line-height: 31px;
+      padding-left: 5px;
+      padding-top: 0;
+    }
+  }
+
+  @include vp-767 {
+    justify-content: start;
+
+    & dl {
+      margin-bottom: 5px;
+    }
+
+    & > p {
+      margin-bottom: 7px;
+    }
+
+    & small {
+      padding-top: 0;
+      font-size: 22px;
+      line-height: 24px;
+    }
+  }
+}

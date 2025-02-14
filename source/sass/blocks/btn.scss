@@ -1,0 +1,63 @@
+.btn {
+  display: inline-flex;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 10px 20px;
+
+  font-size: 12px;
+  line-height: 14px;
+
+  color: $color-default-white;
+  justify-content: center;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+  background-color: $color-transparent;
+  border: 4px solid $color-default-white;
+  cursor: pointer;
+  user-select: none;
+
+  &--clear-white-first {
+    padding: 19px 55px;
+    justify-self: end;
+
+    @include vp-1199 {
+      padding: 19px 30px;
+    }
+
+    @include vp-767 {
+      width: 100%;
+      padding: 20px 30px;
+    }
+  }
+
+  &--clear-sapphire {
+    font-weight: 700;
+    color: $color-sapphire;
+    padding: 26px 46px;
+    box-shadow: 0 0 0 2px $color-sapphire inset;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+
+    pointer-events: none;
+  }
+
+  &--underline {
+    display: inline-block;
+    border: none;
+    color: $color-resolution-blue;
+    text-transform: uppercase;
+    border-bottom: 1px solid $color-resolution-blue;
+    margin: 0;
+    padding: 0;
+  }
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
+  }
+}

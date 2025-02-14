@@ -1,0 +1,18 @@
+.social-header {
+  text-align: end;
+}
+
+.social-header li:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.social-header a {
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: $color-default-white;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
