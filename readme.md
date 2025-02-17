@@ -2,7 +2,8 @@
 
 [denispan.github.io/supergym-fitness](https://denispan.github.io/supergym-fitness/index.html) </br></br>
 
-Лендинговая страница фитнесс-центра Supergym</br></br>
+Лендинговая страница фитнесс-центра Supergym</br>
+Данные из формы оформления бесплатного занятия отправляются на мой сервер и возвращаются для проверки.</br></br>
 <strong>Адаптивная Pixel Perfect верстка по макету Figma</strong>
 
 ### [Главная страница](https://denispan.github.io/supergym-fitness/)
