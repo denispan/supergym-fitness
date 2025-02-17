@@ -9,8 +9,7 @@
 ### [Главная страница](https://denispan.github.io/supergym-fitness/)
 | Desktop | Tablet | Mobile |
 |:---------------:|:--------------:|:----------------:|
-| <img width="300" alt="Desktop version" src="https://github.com/user-attachments/assets/0e2274fd-c20d-4a38-bb66-460847b2949a" /> | <img width="200" alt="Tablet version" src="https://github.com/user-attachments/assets/58c59b62-1faf-4c85-a5ba-9806f90f4034" /> | <img width="150" alt="Mobile version" src="https://github.com/user-attachments/assets/d72bb8ae-ace4-495c-aba4-5dae11da9e0b" /> |
-
+| <img width="300" alt="Desktop version" src="https://github.com/user-attachments/assets/2ba565d9-c00c-407e-97fa-dd574e72ffd1" /> | <img width="200" alt="Tablet version" src="https://github.com/user-attachments/assets/5321eae8-9687-447d-a4c2-3f80547517d7" /> | <img width="150" alt="Mobile version" src="https://github.com/user-attachments/assets/cf9d61c9-3903-46c7-8eec-76053663cfd2" /> |
 
 ## Технологии
 
